@@ -497,14 +497,9 @@ main {
           transition-delay: 0.4s;
 }
 
-.container.show-navbar .circle {
-  -webkit-transform: rotate(-70deg);
-      -ms-transform: rotate(-70deg);
-          transform: rotate(-70deg);
-}
-
 .circle-container {
   position: fixed;
+  z-index: 100;
   top: -100px;
   left: -100px;
 }
@@ -520,6 +515,12 @@ main {
   -o-transition: transform 0.5s linear;
   transition: transform 0.5s linear;
   transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+.circle.active {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .circle button {
